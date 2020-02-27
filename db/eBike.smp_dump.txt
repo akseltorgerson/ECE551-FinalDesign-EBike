@@ -1,0 +1,43 @@
+
+State Machine - |eBike|inert_intf:iInert_intf|state
+Name state.WAIT_READ state.SET_VALID state.WAIT_INIT state.START_READ state.WAIT_INITIALIZE state.INITIALIZE state.RESET 
+state.RESET 0 0 0 0 0 0 0 
+state.INITIALIZE 0 0 0 0 0 1 1 
+state.WAIT_INITIALIZE 0 0 0 0 1 0 1 
+state.START_READ 0 0 0 1 0 0 1 
+state.WAIT_INIT 0 0 1 0 0 0 1 
+state.SET_VALID 0 1 0 0 0 0 1 
+state.WAIT_READ 1 0 0 0 0 0 1 
+
+State Machine - |eBike|inert_intf:iInert_intf|SPI_mstr:mine|state
+Name state.IDLE state.BACKPORCH state.SMPL state.FRONTPORCH 
+state.IDLE 0 0 0 0 
+state.FRONTPORCH 1 0 0 1 
+state.SMPL 1 0 1 0 
+state.BACKPORCH 1 1 0 0 
+
+State Machine - |eBike|sensorCondition:iSensorCondition|telemetry:iTelemetry|state
+Name state.PAYLOAD6 state.PAYLOAD5 state.PAYLOAD4 state.PAYLOAD3 state.PAYLOAD2 state.PAYLOAD1 state.DELIM1 state.IDLE state.WAIT 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.DELIM1 0 0 0 0 0 0 1 1 0 
+state.PAYLOAD1 0 0 0 0 0 1 0 1 0 
+state.PAYLOAD2 0 0 0 0 1 0 0 1 0 
+state.PAYLOAD3 0 0 0 1 0 0 0 1 0 
+state.PAYLOAD4 0 0 1 0 0 0 0 1 0 
+state.PAYLOAD5 0 1 0 0 0 0 0 1 0 
+state.PAYLOAD6 1 0 0 0 0 0 0 1 0 
+state.WAIT 0 0 0 0 0 0 0 1 1 
+
+State Machine - |eBike|A2D_intf:iA2D_intf|state
+Name state.ReadData state.Wait state.Transaction1 state.IDLE 
+state.IDLE 0 0 0 0 
+state.Transaction1 0 0 1 1 
+state.Wait 0 1 0 1 
+state.ReadData 1 0 0 1 
+
+State Machine - |eBike|A2D_intf:iA2D_intf|SPI_mstr:mstr|state
+Name state.IDLE state.BACKPORCH state.SMPL state.FRONTPORCH 
+state.IDLE 0 0 0 0 
+state.FRONTPORCH 1 0 0 1 
+state.SMPL 1 0 1 0 
+state.BACKPORCH 1 1 0 0 

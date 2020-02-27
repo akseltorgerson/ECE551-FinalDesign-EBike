@@ -1,0 +1,154 @@
+# Loading project FinalProject
+# reading /cae/apps/data/mentor-2019/modelsim_dlx/linuxpe/../modelsim.ini
+# Loading project FinalProject
+# Compile of A2D_intf.sv was successful.
+# Compile of AnalogModel.sv was successful.
+# Compile of brushless.sv was successful.
+# Compile of cadence_filt.sv was successful.
+# Compile of desiredDrive.sv was successful.
+# Compile of eBike.sv was successful.
+# Compile of eBikePhysics.sv was successful.
+# Compile of inert_intf.sv was successful.
+# Compile of inertial_integrator.sv was successful with warnings.
+# Compile of nonoverlap.sv was successful.
+# Compile of PID.sv was successful.
+# Compile of PWM11.sv was successful.
+# Compile of rst_synch.sv was successful.
+# Compile of sensorCondition.sv was successful.
+# Compile of SPI_ADC128S.sv was successful.
+# Compile of SPI_mstr.sv was successful.
+# Compile of telemetry.sv was successful.
+# Compile of UART_rcv.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of mtr_drv.sv was successful.
+# Compile of eBike_tb.sv was successful with warnings.
+# 21 compiles, 0 failed with no errors.
+# Compile of A2D_intf.sv was successful.
+# Compile of AnalogModel.sv was successful.
+# Compile of brushless.sv was successful.
+# Compile of cadence_filt.sv was successful.
+# Compile of desiredDrive.sv was successful.
+# Compile of eBike.sv was successful.
+# Compile of eBike_tb.sv was successful with warnings.
+# Compile of eBikePhysics.sv was successful.
+# Compile of inert_intf.sv was successful.
+# Compile of inertial_integrator.sv was successful with warnings.
+# Compile of mtr_drv.sv was successful.
+# Compile of nonoverlap.sv was successful.
+# Compile of PID.sv was successful.
+# Compile of PIDold.sv was successful.
+# Compile of PWM11.sv was successful.
+# Compile of rst_synch.sv was successful.
+# Compile of sensorCondition.sv was successful.
+# Compile of SPI_ADC128S.sv was successful.
+# Compile of SPI_mstr.sv was successful.
+# Compile of telemetry.sv was successful.
+# Compile of UART_rcv.sv was successful.
+# Compile of UART_tx.sv was successful.
+# 22 compiles, 0 failed with no errors.
+vsim work.eBike_tb
+# vsim work.eBike_tb 
+# Start time: 17:05:27 on Dec 10,2019
+# //  ModelSim DE 2019.2 Apr 16 2019 Linux 4.9.0-11-amd64
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.eBike_tb
+# Loading work.AnalogModel
+# Loading work.SPI_ADC128S
+# Loading work.eBikePhysics
+# Loading work.eBike
+# Loading work.rst_synch
+# Loading work.A2D_intf
+# Loading work.SPI_mstr
+# Loading work.sensorCondition
+# Loading work.cadence_filt
+# Loading work.desiredDrive
+# Loading work.telemetry
+# Loading work.UART_tx
+# Loading work.PID
+# Loading work.brushless
+# Loading work.mtr_drv
+# Loading work.PWM
+# Loading work.nonoverlap
+# Loading work.inert_intf
+# Loading work.inertial_integrator
+add wave -position insertpoint  \
+sim:/eBike_tb/iPHYS/omega
+add wave -position insertpoint  \
+sim:/eBike_tb/iPHYS/incline
+add wave -position insertpoint  \
+sim:/eBike_tb/iPHYS/NEMO_setup
+add wave -position insertpoint  \
+sim:/eBike_tb/iDUT/iSensorCondition/avg_curr \
+sim:/eBike_tb/iDUT/iSensorCondition/error \
+sim:/eBike_tb/iDUT/iSensorCondition/target_curr
+add wave -position insertpoint  \
+sim:/eBike_tb/iDUT/iInert_intf/MISO \
+sim:/eBike_tb/iDUT/iInert_intf/MOSI
+run -all
+add wave -position insertpoint  \
+sim:/eBike_tb/iDUT/iInert_intf/incline
+restart
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# YAHOO TEST PASSED!
+# ** Note: $stop    : /filespace/a/atorgerson/ECE551/FinalProjectHoffmanFiles/eBike_tb.sv(598)
+#    Time: 395544330 ns  Iteration: 1  Instance: /eBike_tb
+# Break in Module eBike_tb at /filespace/a/atorgerson/ECE551/FinalProjectHoffmanFiles/eBike_tb.sv line 598
+# Compile of A2D_intf.sv was successful.
+# Compile of AnalogModel.sv was successful.
+# Compile of brushless.sv was successful.
+# Compile of cadence_filt.sv was successful.
+# Compile of desiredDrive.sv was successful.
+# Compile of eBike.sv was successful.
+# Compile of eBike_tb.sv was successful with warnings.
+# Compile of eBikePhysics.sv was successful.
+# Compile of inertial_integrator.sv was successful with warnings.
+# Compile of mtr_drv.sv was successful.
+# Compile of nonoverlap.sv was successful.
+# Compile of PID.sv was successful.
+# Compile of PWM11.sv was successful.
+# Compile of rst_synch.sv was successful.
+# Compile of sensorCondition.sv was successful.
+# Compile of SPI_ADC128S.sv was successful.
+# Compile of SPI_mstr.sv was successful.
+# Compile of telemetry.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of inert_intf.sv was successful.
+# 20 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.eBike_tb
+# Loading work.AnalogModel
+# Loading work.SPI_ADC128S
+# Loading work.eBikePhysics
+# Loading work.eBike
+# Loading work.rst_synch
+# Loading work.A2D_intf
+# Loading work.SPI_mstr
+# Loading work.sensorCondition
+# Loading work.cadence_filt
+# Loading work.desiredDrive
+# Loading work.telemetry
+# Loading work.UART_tx
+# Loading work.PID
+# Loading work.brushless
+# Loading work.mtr_drv
+# Loading work.PWM
+# Loading work.nonoverlap
+# Loading work.inert_intf
+# Loading work.inertial_integrator
+run -all

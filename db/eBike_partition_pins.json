@@ -1,0 +1,109 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "A2D_SS_n",
+					"strict" : false
+				},
+				{
+					"name" : "A2D_MOSI",
+					"strict" : false
+				},
+				{
+					"name" : "A2D_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "highGrn",
+					"strict" : false
+				},
+				{
+					"name" : "lowGrn",
+					"strict" : false
+				},
+				{
+					"name" : "highYlw",
+					"strict" : false
+				},
+				{
+					"name" : "lowYlw",
+					"strict" : false
+				},
+				{
+					"name" : "highBlu",
+					"strict" : false
+				},
+				{
+					"name" : "lowBlu",
+					"strict" : false
+				},
+				{
+					"name" : "inertSS_n",
+					"strict" : false
+				},
+				{
+					"name" : "inertSCLK",
+					"strict" : false
+				},
+				{
+					"name" : "inertMOSI",
+					"strict" : false
+				},
+				{
+					"name" : "TX",
+					"strict" : false
+				},
+				{
+					"name" : "setting[0]",
+					"strict" : false
+				},
+				{
+					"name" : "setting[1]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "RST_n",
+					"strict" : false
+				},
+				{
+					"name" : "hallGrn",
+					"strict" : false
+				},
+				{
+					"name" : "hallYlw",
+					"strict" : false
+				},
+				{
+					"name" : "hallBlu",
+					"strict" : false
+				},
+				{
+					"name" : "tgglMd",
+					"strict" : false
+				},
+				{
+					"name" : "inertINT",
+					"strict" : false
+				},
+				{
+					"name" : "A2D_MISO",
+					"strict" : false
+				},
+				{
+					"name" : "cadence",
+					"strict" : false
+				},
+				{
+					"name" : "inertMISO",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

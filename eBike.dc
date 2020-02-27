@@ -1,0 +1,74 @@
+###########################
+# Read in all eBike files #
+###########################
+read_file -format sverilog {eBike.sv, A2D_intf.sv, brushless.sv, cadence_filt.sv, mtr_drv.sv, nonoverlap.sv, PID.sv, PWM11.sv, rst_synch.sv, sensorCondition.sv, SPI_mstr.sv, telemetry.sv, desiredDrive.sv, inert_intf.sv, inertial_integrator.sv, UART_tx.sv}
+
+##########################
+# Set the current design #	
+##########################
+set current_design eBike
+
+###################################
+# Link the children to the parent #
+###################################
+link
+
+###########################################################
+# Create the clock and don't touch it and set uncertainty #
+###########################################################
+create_clock -name "clk" -period 3.33333 -waveform {0 1.66667} {clk}
+set_dont_touch_network [find port clk]
+set_clock_uncertainty 0.12 clk
+
+# remove clock from clock and rst_n from prim_inputs
+set prim_inputs [remove_from_collection [all_inputs] [find port clk]]
+
+###########################################
+# Set input delay and drive on all inputs #
+###########################################
+set_input_delay -clock clk 0.5 [copy_collection $prim_inputs]
+set_driving_cell -lib_cell NAND2X1_RVT -library saed32rvt_tt0p85v25c [copy_collection $prim_inputs]
+
+############################################
+# Set output delay and load on all outputs #
+############################################
+set_output_delay -clock clk .5 [all_outputs]
+set_load .15 [all_outputs]
+
+#########################################
+# Max transition time for Hot-E reasons #
+#########################################
+set_max_transition .15 [current_design]
+
+#############################################
+# Set the wire load model for Synopsys 32nm #
+#############################################
+set_wire_load_model -name 16000 -library saed32rvt_tt0p85v25c
+
+#################################
+# Synthesize for the first time #
+#################################
+compile -map_effort low
+check_design
+report_area
+
+
+# Smash the hierarchy
+ungroup -all -flatten
+
+# Compile again #
+set_fix_hold clk
+compile -map_effort medium
+check_design
+
+report_timing -delay max > eBike_max_delay.rpt
+report_timing -delay min > eBike_min_delay.rpt
+report_area > eBike_area.rpt
+
+### Write out the final netlist ###
+write -format verilog eBike -output eBike.vg
+
+### Write out SDC file ####
+#write_sdc eBike.sdc
+
+

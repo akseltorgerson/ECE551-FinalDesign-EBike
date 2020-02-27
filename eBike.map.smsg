@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at SPI_mstr.sv(7): object "smpl" differs only in case from object "SMPL" in the same scope File: I:/ece551/FinalProjectNEWINERTZipCopy/SPI_mstr.sv Line: 7
+Info (10281): Verilog HDL Declaration information at SPI_mstr.sv(7): object "shft" differs only in case from object "SHFT" in the same scope File: I:/ece551/FinalProjectNEWINERTZipCopy/SPI_mstr.sv Line: 7
+Info (10281): Verilog HDL Declaration information at eBike.sv(8): object "RST_n" differs only in case from object "rst_n" in the same scope File: I:/ece551/FinalProjectNEWINERTZipCopy/eBike.sv Line: 8
+Info (10281): Verilog HDL Declaration information at rst_synch.sv(3): object "RST_n" differs only in case from object "rst_n" in the same scope File: I:/ece551/FinalProjectNEWINERTZipCopy/rst_synch.sv Line: 3

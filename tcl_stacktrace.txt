@@ -1,0 +1,36 @@
+Sun Dec 08 21:49:31 CST 2019
+Trace back: can't read "::vsimPriv(tbarBtnIgnore)": no such element in array
+    while executing
+"if { ! $::vsimPriv(tbarBtnIgnore) } {
+            ButtonInvoke $b $m
+         }"
+    (procedure "Tbar::BMenu::Action" line 51)
+    invoked from within
+"Tbar::BMenu::Action release .dockbar.tbf0.standard.tb.button_10 .dockbar.tbf0.standard.tb.button_10.menu 24 14 1"
+    (command bound to event)
+  <2:/cae/apps/data/mentor-2019/modelsim_dlx/linuxpe/tk8.6/bgerror.tcl:106: ::tkerror {can't read "::vsimPriv(tbarBtnIgnore)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "::vsimPriv(tbarBtnIgnore)": no such element in array}
+Sun Dec 08 21:50:01 CST 2019
+Trace back: can't read "::vsimPriv(tbarBtnIgnore)": no such element in array
+    while executing
+"if { ! $::vsimPriv(tbarBtnIgnore) } {
+            ButtonInvoke $b $m
+         }"
+    (procedure "Tbar::BMenu::Action" line 51)
+    invoked from within
+"Tbar::BMenu::Action release .dockbar.tbf0.standard.tb.button_10 .dockbar.tbf0.standard.tb.button_10.menu 19 8 1"
+    (command bound to event)
+  <2:/cae/apps/data/mentor-2019/modelsim_dlx/linuxpe/tk8.6/bgerror.tcl:106: ::tkerror {can't read "::vsimPriv(tbarBtnIgnore)": no such element in array}
+  <1:proc:204: ::tk::dialog::error::bgerror {can't read "::vsimPriv(tbarBtnIgnore)": no such element in array}
+Sun Dec 08 21:50:31 CST 2019
+Trace back: can't read "::vsimPriv(tbarBtnIgnore)": no such element in array
+    while executing
+"if { ! $::vsimPriv(tbarBtnIgnore) } {
+            ButtonInvoke $b $m
+         }"
+    (procedure "Tbar::BMenu::Action" line 51)
+    invoked from within
+"Tbar::BMenu::Action release .dockbar.tbf0.standard.tb.button_10 .dockbar.tbf0.standard.tb.button_10.menu 14 5 1"
+    (command bound to event)
+  <2:/cae/apps/data/mentor-2019/modelsim_dlx/linuxpe/tk8.6/bgerror.tcl:106: ::tkerror {can't read "::vsimPriv(tbarBtnIgnore)": no such element in array}
+  <1:proc:204: ::tk::dialog::error::bgerror {can't read "::vsimPriv(tbarBtnIgnore)": no such element in array}

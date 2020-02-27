@@ -1,0 +1,97 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : eBike
+Version: P-2019.03
+Date   : Wed Dec 11 01:15:26 2019
+****************************************
+
+Operating Conditions: tt0p85v25c   Library: saed32rvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: iInert_intf/me/roll_int_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iInert_intf/me/roll_int_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  eBike              16000                 saed32rvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iInert_intf/me/roll_int_reg[0]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  iInert_intf/me/roll_int_reg[0]/QN (DFFARX1_RVT)         0.11       0.11 r
+  U3141/Y (NOR2X0_RVT)                                    0.09       0.20 f
+  iInert_intf/me/add_1_root_add_0_root_add_69_2/U1_1/CO (FADDX1_RVT)
+                                                          0.10       0.30 f
+  iInert_intf/me/add_1_root_add_0_root_add_69_2/U1_2/CO (FADDX1_RVT)
+                                                          0.10       0.41 f
+  iInert_intf/me/add_1_root_add_0_root_add_69_2/U1_3/CO (FADDX1_RVT)
+                                                          0.10       0.51 f
+  iInert_intf/me/add_1_root_add_0_root_add_69_2/U1_4/CO (FADDX1_RVT)
+                                                          0.10       0.62 f
+  iInert_intf/me/add_1_root_add_0_root_add_69_2/U1_5/CO (FADDX1_RVT)
+                                                          0.10       0.72 f
+  iInert_intf/me/add_1_root_add_0_root_add_69_2/U1_6/CO (FADDX1_RVT)
+                                                          0.10       0.82 f
+  iInert_intf/me/add_1_root_add_0_root_add_69_2/U1_7/CO (FADDX1_RVT)
+                                                          0.10       0.93 f
+  iInert_intf/me/add_1_root_add_0_root_add_69_2/U1_8/CO (FADDX1_RVT)
+                                                          0.10       1.03 f
+  iInert_intf/me/add_1_root_add_0_root_add_69_2/U1_9/CO (FADDX1_RVT)
+                                                          0.11       1.14 f
+  U2342/Y (NAND2X0_RVT)                                   0.05       1.19 r
+  U2344/Y (NAND3X0_RVT)                                   0.07       1.26 f
+  iInert_intf/me/add_1_root_add_0_root_add_69_2/U1_11/S (FADDX1_RVT)
+                                                          0.18       1.44 r
+  U1844/Y (AO22X1_RVT)                                    0.07       1.51 r
+  U1842/Y (OR2X1_RVT)                                     0.06       1.56 r
+  U1841/Y (AO22X1_RVT)                                    0.07       1.64 r
+  U1839/Y (OR2X1_RVT)                                     0.06       1.70 r
+  U1838/Y (AO22X1_RVT)                                    0.07       1.77 r
+  U1836/Y (OR2X1_RVT)                                     0.06       1.84 r
+  U1835/Y (AO22X1_RVT)                                    0.07       1.91 r
+  U1833/Y (OR2X1_RVT)                                     0.06       1.98 r
+  U1832/Y (AO22X1_RVT)                                    0.08       2.05 r
+  U1830/Y (OR2X1_RVT)                                     0.07       2.12 r
+  U1829/Y (AO22X1_RVT)                                    0.07       2.19 r
+  U1827/Y (OR2X1_RVT)                                     0.06       2.26 r
+  U1826/Y (AO22X1_RVT)                                    0.07       2.33 r
+  U1824/Y (OR2X1_RVT)                                     0.06       2.40 r
+  U1823/Y (AO22X1_RVT)                                    0.08       2.47 r
+  U2177/Y (OR2X1_RVT)                                     0.07       2.54 r
+  U1820/Y (AO22X1_RVT)                                    0.07       2.61 r
+  U1818/Y (OR2X1_RVT)                                     0.06       2.68 r
+  U1817/Y (AO22X1_RVT)                                    0.07       2.75 r
+  U1815/Y (AND2X1_RVT)                                    0.06       2.80 r
+  U1814/Y (OA22X1_RVT)                                    0.08       2.88 r
+  U2677/Y (INVX0_RVT)                                     0.03       2.91 f
+  U1812/Y (AO22X1_RVT)                                    0.08       2.99 f
+  U2379/Y (XOR3X2_RVT)                                    0.08       3.07 r
+  U2378/Y (OAI22X1_RVT)                                   0.08       3.15 f
+  iInert_intf/me/roll_int_reg[23]/D (DFFARX1_RVT)         0.01       3.16 f
+  data arrival time                                                  3.16
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.12       3.21
+  iInert_intf/me/roll_int_reg[23]/CLK (DFFARX1_RVT)       0.00       3.21 r
+  library setup time                                     -0.05       3.16
+  data required time                                                 3.16
+  --------------------------------------------------------------------------
+  data required time                                                 3.16
+  data arrival time                                                 -3.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,140 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY "eBike"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.0
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:24:37 JUNE 18,2019"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+
+#============================================================
+# CLOCK
+#============================================================
+set_location_assignment PIN_R8 -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+
+#============================================================
+# LED
+#============================================================
+set_location_assignment PIN_A15 -to setting[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to setting[0]
+set_location_assignment PIN_A13 -to setting[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to setting[1]
+#set_location_assignment PIN_B13 -to LED[2]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
+#set_location_assignment PIN_A11 -to LED[3]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[3]
+#set_location_assignment PIN_D1 -to LED[4]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[4]
+#set_location_assignment PIN_F3 -to LED[5]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
+#set_location_assignment PIN_B1 -to LED[6]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
+#set_location_assignment PIN_L3 -to LED[7]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
+
+#============================================================
+# KEY
+#============================================================
+set_location_assignment PIN_J15 -to RST_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RST_n
+set_location_assignment PIN_E1 -to tgglMd
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to tgglMd
+
+#============================================================
+# SW
+#============================================================
+#set_location_assignment PIN_M1 -to setting[0]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to setting[0]
+#set_location_assignment PIN_T8 -to setting[1]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to setting[1]
+#set_location_assignment PIN_B9 -to D_coeff[0]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to D_coeff[0]
+#set_location_assignment PIN_M15 -to D_coeff[1]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to D_coeff[1]
+
+
+#============================================================
+# ADC
+#============================================================
+set_location_assignment PIN_A10 -to A2D_SS_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A2D_SS_n
+set_location_assignment PIN_B10 -to A2D_MOSI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A2D_MOSI
+set_location_assignment PIN_B14 -to A2D_SCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A2D_SCLK
+set_location_assignment PIN_A9 -to A2D_MISO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A2D_MISO
+
+#============================================================
+# 2x13 GPIO Header
+#============================================================
+set_location_assignment PIN_A14 -to highGrn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to highGrn
+set_location_assignment PIN_B16 -to lowGrn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to lowGrn
+set_location_assignment PIN_C14 -to highYlw
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to highYlw
+set_location_assignment PIN_C16 -to lowYlw
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to lowYlw
+set_location_assignment PIN_C15 -to highBlu
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to highBlu
+set_location_assignment PIN_D16 -to lowBlu
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to lowBlu
+set_location_assignment PIN_D15 -to inertSS_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to inertSS_n
+set_location_assignment PIN_D14 -to inertSCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to inertSCLK
+set_location_assignment PIN_F15 -to inertMOSI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to inertMOSI
+set_location_assignment PIN_F16 -to inertMISO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to inertMISO
+set_location_assignment PIN_F14 -to inertINT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to inertINT
+set_location_assignment PIN_G16 -to cadence
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cadence
+set_location_assignment PIN_G15 -to TX
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX
+set_location_assignment PIN_E15 -to hallGrn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hallGrn
+set_location_assignment PIN_E16 -to hallYlw
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hallYlw
+set_location_assignment PIN_M16 -to hallBlu
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hallBlu
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE rst_synch.v
+set_global_assignment -name SYSTEMVERILOG_FILE cadence_filt.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sensorCondition.sv
+set_global_assignment -name SYSTEMVERILOG_FILE UART_tx.sv
+set_global_assignment -name SYSTEMVERILOG_FILE telemetry.sv
+set_global_assignment -name SYSTEMVERILOG_FILE SPI_mstr.sv
+set_global_assignment -name VERILOG_FILE desiredDrive.v
+set_global_assignment -name SYSTEMVERILOG_FILE PID.sv
+set_global_assignment -name SYSTEMVERILOG_FILE nonoverlap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE brushless.sv
+set_global_assignment -name SYSTEMVERILOG_FILE PWM11.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mtr_drv.sv
+set_global_assignment -name SYSTEMVERILOG_FILE inertial_integrator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE inert_intf.sv
+set_global_assignment -name SYSTEMVERILOG_FILE eBike.sv
+set_global_assignment -name SYSTEMVERILOG_FILE A2D_intf.sv
+set_global_assignment -name SDC_FILE eBike.SDC
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,36 @@
+/filespace/a/atorgerson/ECE551/FinalProjectGOLDMASTER/postSynthesisValidation/SPI_ADC128S.sv {1 {vlog -work work -sv -stats=none /filespace/a/atorgerson/ECE551/FinalProjectGOLDMASTER/postSynthesisValidation/SPI_ADC128S.sv
+Model Technology ModelSim DE vlog 2019.2 Compiler 2019.04 Apr 16 2019
+-- Compiling module SPI_ADC128S
+
+Top level modules:
+	SPI_ADC128S
+
+} {} {}} /filespace/a/atorgerson/ECE551/FinalProjectGOLDMASTER/postSynthesisValidation/eBike_tb.sv {1 {vlog -work work -sv -stats=none /filespace/a/atorgerson/ECE551/FinalProjectGOLDMASTER/postSynthesisValidation/eBike_tb.sv
+Model Technology ModelSim DE vlog 2019.2 Compiler 2019.04 Apr 16 2019
+-- Compiling module eBike_tb
+
+Top level modules:
+	eBike_tb
+
+} {} {}} /filespace/a/atorgerson/ECE551/FinalProjectGOLDMASTER/postSynthesisValidation/eBikePhysics.sv {1 {vlog -work work -sv -stats=none /filespace/a/atorgerson/ECE551/FinalProjectGOLDMASTER/postSynthesisValidation/eBikePhysics.sv
+Model Technology ModelSim DE vlog 2019.2 Compiler 2019.04 Apr 16 2019
+-- Compiling module eBikePhysics
+
+Top level modules:
+	eBikePhysics
+
+} {} {}} /filespace/a/atorgerson/ECE551/FinalProjectGOLDMASTER/postSynthesisValidation/AnalogModel.sv {1 {vlog -work work -sv -stats=none /filespace/a/atorgerson/ECE551/FinalProjectGOLDMASTER/postSynthesisValidation/AnalogModel.sv
+Model Technology ModelSim DE vlog 2019.2 Compiler 2019.04 Apr 16 2019
+-- Compiling module AnalogModel
+
+Top level modules:
+	AnalogModel
+
+} {} {}} /filespace/a/atorgerson/ECE551/FinalProjectGOLDMASTER/postSynthesisValidation/eBike.vg {1 {vlog -work work -stats=none /filespace/a/atorgerson/ECE551/FinalProjectGOLDMASTER/postSynthesisValidation/eBike.vg
+Model Technology ModelSim DE vlog 2019.2 Compiler 2019.04 Apr 16 2019
+-- Compiling module eBike
+
+Top level modules:
+	eBike
+
+} {} {}}
